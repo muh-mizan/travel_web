@@ -1,0 +1,135 @@
+.FooterContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 100px 12%;
+}
+
+
+.footerWrapper{
+    flex-direction: column;
+}
+
+.footerlinks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerlinks h3{
+    margin-bottom: 30px;
+}
+
+.footerlinks a{
+    color: #1e1e1e;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .6s;
+}
+
+
+.footerlinks img{
+    width: 150px;
+}
+
+
+.footerlinks a:hover{
+    color: rgb(98, 128, 98);
+}
+
+.banner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 12%;
+    background-color: rgb(98, 128, 98);
+}
+
+
+.banner .content{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.banner .content i{
+       font-size: 55px;
+       color: rgb(0, 0, 0);
+       font-weight: 300;
+}
+
+
+.banner .content h2{
+      font-family: 'jost';
+}
+
+
+.banner .content h2 span{
+    font-weight: 300;
+    display: block;
+    font-size: 15px;
+}
+
+
+.banner .form{
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.banner .form input{
+    height: 43px;
+    width: 340px;
+    padding: 0 12px;
+    border: none;
+    outline: none;
+}
+
+
+.banner .form button{
+    background-color: #0e3b03;
+    color: #739177;
+    border: 1px solid black;
+}
+
+
+.banner .form button:hover{
+background-color: #62926e83;
+color: #19420e;
+border: 1px solid black;
+}
+
+
+@media screen and (max-width:900px) {
+    .FooterContainer{
+        grid-template-columns: repeat(2,1fr);
+    } 
+}
+
+
+@media screen and (max-width:554px) {
+    .FooterContainer{
+        grid-template-columns: repeat(1,1fr);
+    } 
+}
+
+
+@media screen and (max-width:1100px) {
+    .banner{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .banner .form,
+    .banner .content{
+         width: 100%;
+         align-items: center;
+         justify-content: center;
+    }
+}

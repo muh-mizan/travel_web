@@ -1,0 +1,50 @@
+.FutureTrip_Wrapper{
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+
+.card{
+    height: 380px;
+    width: 280px;
+}
+
+
+
+.imgWrapper{
+    height: 180px;
+    width: 100%;
+}
+
+
+.card .imgWrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .6s;
+    margin-bottom: 10px;
+
+}
+
+.card h3{
+    font-size: 18px;
+    font-family: 'jost';
+    font-weight: 500;
+    position: relative;
+
+
+
+}
+
+
+.card:hover .imgWrapper img{
+    transform: scale(1.2);
+}
+
+
+@media screen and (max-width:768px){
+    .card{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
